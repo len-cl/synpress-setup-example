@@ -76,7 +76,7 @@ describe('CryptoLeague', () => {
         .click();
 
       cy.contains('Confirm & Continue').click();
-      cy.contains('Processing...'); // I removed wait 5000
+      cy.contains('Processing...');
       cy.confirmMetamaskTransaction({
         gasLimit: 1000000,
         baseFee: 100,

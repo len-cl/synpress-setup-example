@@ -4,6 +4,12 @@ We should use this.
 
 curl https://gasstation-mainnet.matic.network
 
+Backup:
+
+- https://polygas.org/
+- https://polygonscan.com/gastracker/
+	- https://wiki.polygon.technology/docs/develop/tools/polygon-gas-station/
+
 == License
 
 

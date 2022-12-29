@@ -4,18 +4,29 @@
 const SECRET_WORDS =
   'organ leopard helmet voice math cactus pitch else perfect firm matrix curtain';
 
-// before(() => {
-//   cy.disconnectMetamaskWalletFromAllDapps();
-// });
+const METAMASK_PASSWORD="test.cl.secret.yo";
+
+const NETWORK_CONFIG = {
+  networkName: 'Mumbai Testnet',
+  rpcUrl: 'https://polygon-rpc.com',
+  chainId: '80001',
+  symbol: 'MATIC',
+  blockExplorer: 'https://mumbai.polygonscan.com',
+  isTestnet: true
+};
+
+before(() => {
+});
 
 describe('CryptoLeague', () => {
-  // beforeEach(() => {
-  //   cy.visit('/');
-  // });
+  beforeEach(() => {
+  });
 
   context('Test commands', () => {
     it(`First open`, () => {
-      cy.setupMetamask(SECRET_WORDS, 'goerli', 'Tester@1234').then(
+
+
+      cy.setupMetamask(SECRET_WORDS, NETWORK_CONFIG, METAMASK_PASSWORD).then(
         setupFinished => {
           expect(setupFinished).to.be.true;
         },

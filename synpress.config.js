@@ -32,7 +32,7 @@ module.exports = defineConfig({
   requestTimeout: process.env.SYNDEBUG ? 9999999 : 30000,
   e2e: {
     setupNodeEvents,
-    baseUrl: 'https://dev-dash-proto-341519.web.app/houses/create',
+    baseUrl: 'https://qa-dash-proto-349303.web.app/houses/create',
     specPattern: 'tests/e2e/specs/**/*.{js,jsx,ts,tsx}',
     supportFile,
   },

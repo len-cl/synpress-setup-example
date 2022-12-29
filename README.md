@@ -1,3 +1,12 @@
+== Fees for test
+
+We should use this.
+
+curl https://gasstation-mainnet.matic.network
+
+== License
+
+
 We are starting our repo from the Sinthetix files because
 it's not easy to setup a project from scratch. For Synpress
 this is the license:
